@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Pacientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Contenido principal (tabla de pacientes) -->
+        <div class="main-content">
+            <h1>Listado de Pacientes</h1>
+
+            <table id="pacientesTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Teléfono</th>
+                        <th>Dirección</th>
+                        <th>Motivo de Consulta</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="pacientesBody">
+                    <!-- Aquí se llenarán los pacientes dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Menú lateral derecho para navegación -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html">Registro</a></li>
+                <li><a href="lista.html" class="active">Listado de Pacientes</a></li> <!-- Redirección correcta -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

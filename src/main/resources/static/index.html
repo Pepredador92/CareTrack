@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pacientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Contenido principal (formulario) -->
+        <div class="main-content">
+            <h1>Registro de Pacientes</h1>
+
+            <form id="pacienteForm" class="formulario">
+                <input type="hidden" id="pacienteId">
+                <div class="input-group">
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="edad" placeholder="Edad" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="telefono" placeholder="Teléfono">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="direccion" placeholder="Dirección">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="motivoConsulta" placeholder="Motivo de Consulta">
+                </div>
+                <button type="submit" id="submitBtn" class="boton azul">Registrar Paciente</button>
+            </form>
+        </div>
+
+        <!-- Menú lateral derecho para navegación -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html" class="active">Registro</a></li>
+                <li><a href="lista.html">Listado de Pacientes</a></li> <!-- Redirección correcta -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
